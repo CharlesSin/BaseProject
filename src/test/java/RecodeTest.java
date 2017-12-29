@@ -15,7 +15,7 @@ public class RecodeTest {
 
     @Test
     public void getWordRecode() {
-        char a = recode0.code_0('a');
-        Assert.assertEquals(a,'!');
+        char b = recode0.code_0('a');
+        Assert.assertEquals(b,'!');
     }
 }

@@ -63,7 +63,7 @@ public class Decode {
 		return temp;
 	}
 
-	public char getWordDecode(char word) {
+	public char getWordDecode(int code,char word) {
 		char temp = word;
 		if (this.code == 1) {
 			temp = code_1(word);
@@ -81,7 +81,7 @@ public class Decode {
 		while ((str = br.readLine()) != null) {
 			String temp = "";
 			for (int i = 0; i < str.length(); i++) {
-				temp += getWordDecode(str.charAt(i));
+				temp += getWordDecode(code,str.charAt(i));
 			}
 			bw.write(temp);
 			bw.newLine();

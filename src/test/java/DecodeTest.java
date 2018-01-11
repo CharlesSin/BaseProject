@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import old.Decode;
+
 import static org.junit.Assert.*;
 
 public class DecodeTest {
@@ -20,11 +22,11 @@ public class DecodeTest {
 
     @Test
     public void getWordDecode0() {
-       char a = decode0.getWordDecode(decode0.code,'A');
+       char a = decode0.getWordDecode(decode0.getCode(),'A');
         Assert.assertEquals(a,'!');
     }
     public void getWordDecode1() {
-        char a = decode0.getWordDecode(decode1.code,'a');
+        char a = decode0.getWordDecode(decode1.getCode(),'a');
         Assert.assertEquals(a,'7');
     }
 

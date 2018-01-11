@@ -1,7 +1,9 @@
 import org.junit.Assert;
     import org.junit.Test;
 
-    import static org.junit.Assert.*;
+import old.Recode;
+
+import static org.junit.Assert.*;
 
 public class RecodeTest {
     Recode recode0 = new Recode(0) ;

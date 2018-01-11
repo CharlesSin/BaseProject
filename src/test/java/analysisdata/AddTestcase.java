@@ -6,6 +6,9 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import old.analysisdata.Data;
+import old.analysisdata.FileRW;
+
 public class AddTestcase {
 
   public static Data analData1;

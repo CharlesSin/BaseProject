@@ -1,3 +1,9 @@
+package old;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //
@@ -7,12 +13,6 @@
 
 @SuppressWarnings({"unused"})
 public class Sharing {
-
-    public static void main(String[] args) {
-        Sharing testMain = new Sharing();
-        testMain.sharing("test");
-        //testMain.sharingOnFacebook("test");
-    }
     
     public String decode;
     
@@ -25,18 +25,29 @@ public class Sharing {
         if(list == null) {
             System.out.println("You didn't have any data, please try again!");
         }else {
-            show(list);
+            
+            if (Desktop.isDesktopSupported()) {
+                try {
+                    Desktop.getDesktop().browse(new URI("http://www.example.com"));
+                } catch (IOException e) {
+                    System.out.println("Can't open web browser! Please check your computer setting.");
+                    e.printStackTrace();
+                    return;
+                } catch (URISyntaxException e) {
+                    System.out.println("Have wrong url! Please contact the developer!");
+                    e.printStackTrace();
+                    return;
+                }
+            }
+            
+            System.out.println("You can now share your result to everywhere!");
+            System.out.println("Just copy the messages below and post to any place you want! =)");
+            System.out.println("============================================================");
+            for(String line : list) {
+                System.out.println(line);
+            }
+            System.out.println("============================================================");
         }
-    }
-    
-    public void show(String[] list) {
-        System.out.println("You can now share your result to everywhere!");
-        System.out.println("Just copy the messages below and post to any place you want!");
-        System.out.println("============================================================");
-        for(String line : list) {
-            System.out.println(line);
-        }
-        System.out.println("============================================================");
     }
     
 //    public void sharingOnFacebook(String code) {

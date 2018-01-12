@@ -78,7 +78,7 @@ public class Main extends JFrame{
     public void init() {
         eventNow = 0;
         
-        setVisible(true);
+//        setVisible(true);
         setSize(800, 600);
         setTitle(launcherName);
         setResizable(false);
@@ -135,6 +135,8 @@ public class Main extends JFrame{
         setupButton(butR4, "D", new butActionR(), taPost.getX(), taPost.getY() + taPost.getHeight() + h, w, h);
         setupButton(butR5, "E", new butActionR(), taPost.getX() + w, taPost.getY() + taPost.getHeight() + h, w, h);
         setupButton(butR6, "F", new butActionR(), taPost.getX() + w + w, taPost.getY() + taPost.getHeight() + h, w, h);
+        
+        setVisible(true);
     }
     
     /*

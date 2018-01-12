@@ -24,7 +24,7 @@ public class Sharing {
         }
         
         if (Integer.parseInt(decode) == 0) {
-            Main.getInstance().addPost("Where do you want to share your result?", "", "List :", "", "A: Facebook", "B: Instagram", "C: Twitter", "D: QQ", "E: VKontakte", "F:Google+");
+            Main.getInstance().addPost("Where do you want to share your result?", "", "List :", "", "A: Facebook", "B: Instagram", "C: Twitter", "D: QQ", "E: VKontakte", "F: Google+");
             decode = String.valueOf(401);
         } else if (Integer.parseInt(decode) == 401) {
             if (Desktop.isDesktopSupported()) {

@@ -78,7 +78,6 @@ public class Main extends JFrame{
     public void init() {
         eventNow = 0;
         
-//        setVisible(true);
         setSize(800, 600);
         setTitle(launcherName);
         setResizable(false);

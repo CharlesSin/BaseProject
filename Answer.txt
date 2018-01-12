@@ -1,0 +1,3 @@
+Xcore.txt 
+Your Analysis Result is : 
+100.0

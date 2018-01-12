@@ -1,4 +1,10 @@
 Average Score: 100
+<<<<<<< HEAD
 Average Conduct: 100
 Hobby: Sports
 Interested field of studies: Chinese
+=======
+Average Conduct: 90
+Hobby: Games
+Interested field of studies: Biology
+>>>>>>> refs/remotes/origin/master

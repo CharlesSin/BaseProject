@@ -1,4 +1,10 @@
 !VERAGE`3COREz`qpp
+<<<<<<< HEAD
 !VERAGE`#ONDUCTz`qpp
 (OBBYz`3PORTS
 )NTERESTED`FIELD`OF`STUDIESz`#HINESE
+=======
+!VERAGE`#ONDUCTz`yp
+(OBBYz`'AMES
+)NTERESTED`FIELD`OF`STUDIESz`"IOLOGY
+>>>>>>> refs/remotes/origin/master

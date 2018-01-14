@@ -77,7 +77,7 @@ public class TestCaseForAnalysisData {
     try {
       ans = rfiles.readfile(filename2);
     } catch (Exception e) {
-        realexcep = e.getMessage();
+      realexcep = e.getMessage();
     }
 
     String strError = String.valueOf(realexcep);
@@ -103,4 +103,5 @@ public class TestCaseForAnalysisData {
     String strAns = String.valueOf(ans);
     assertEquals(strReal, strAns);
   }
+
 }

@@ -73,6 +73,7 @@ public class TestCaseForAnalysisData {
     try {
       ans = rfiles.readfile(filename1);
     } catch (Exception e) {
+      e.getMessage();
     }
     try {
       ans = rfiles.readfile(filename2);
@@ -97,6 +98,7 @@ public class TestCaseForAnalysisData {
     try {
       ans = wfiles.writeFile(100, answer);
     } catch (Exception e) {
+      e.getMessage();
     }
 
     String strReal = String.valueOf(real);

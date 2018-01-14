@@ -71,7 +71,6 @@ public class TestCaseForAnalysisData {
     try {
       ans = rfiles.readfile(filename);
     } catch (Exception e) {
-      e.printStackTrace();
     }
 
     String strReal = String.valueOf(real);
@@ -87,7 +86,6 @@ public class TestCaseForAnalysisData {
     try {
       ans = wfiles.writeFile(100, answer);
     } catch (Exception e) {
-      e.printStackTrace();
     }
 
     String strReal = String.valueOf(real);

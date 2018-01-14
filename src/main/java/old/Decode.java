@@ -74,23 +74,41 @@ public class Decode {
     return temp;
   }
 
-  void decode(String src, String dst) throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(src)), "UTF-8"));
-    BufferedWriter bw = new BufferedWriter(new FileWriter(dst));
+  public String decode(String src, String dst) {
+    BufferedReader br = null;
+    BufferedWriter bw = null;
+
+    try {
+      br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(src)), "UTF-8"));
+      bw = new BufferedWriter(new FileWriter(dst));
+    } catch (IOException e) {
+      e.getMessage();
+    }
+
     String str;
 
-    while ((str = br.readLine()) != null) {
-      String temp = "";
-      for (int i = 0; i < str.length(); i++) {
-        temp += getWordDecode(code, str.charAt(i));
+    try {
+      while ((str = br.readLine()) != null) {
+        String temp = "";
+        for (int i = 0; i < str.length(); i++) {
+          temp += getWordDecode(code, str.charAt(i));
+        }
+        bw.write(temp);
+        bw.newLine();
       }
-      bw.write(temp);
-      bw.newLine();
+    } catch (IOException e) {
+      e.getMessage();
     }
-    System.out.println("Decode Sul");
-    br.close();
-    bw.close();
 
+    try {
+      br.close();
+      bw.close();
+    } catch (IOException e) {
+      e.getMessage();
+    }
+
+    String finish = "Decode Done";
+    return finish;
   }
 
   public int getCode() {

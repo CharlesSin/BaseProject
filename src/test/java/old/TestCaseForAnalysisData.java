@@ -65,7 +65,7 @@ public class TestCaseForAnalysisData {
   @Test
   public void test4() {
     String filename1 = "Xcore";
-    String excep1 = null;
+    String excep = null;
     String filename2 = "Xcore1";
     String errorans = "Xcore1 (The system cannot find the file specified)";
     double real = 100;
@@ -77,10 +77,10 @@ public class TestCaseForAnalysisData {
     try {
       ans = rfiles.readfile(filename2);
     } catch (Exception e) {
-      excep1 = e.getMessage();
+      excep = e.getMessage();
     }
 
-    String strError = String.valueOf(excep1);
+    String strError = String.valueOf(excep);
     String strAnsError = String.valueOf(errorans);
 
     String strReal = String.valueOf(real);

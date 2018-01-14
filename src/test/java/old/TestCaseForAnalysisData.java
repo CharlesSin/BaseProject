@@ -1,9 +1,6 @@
 package old;
 
 import static org.junit.Assert.*;
-
-import old.analysisdata.Data;
-import old.analysisdata.FileRW;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,16 +14,16 @@ public class TestCaseForAnalysisData {
   private static FileRW wfiles;
 
   @BeforeClass
-  public static void setUpBeforeClass() throws Exception {
-    analData1 = new old.analysisdata.Data();
-    analData2 = new old.analysisdata.Data();
+  public static void setUpBeforeClass() {
+    analData1 = new Data();
+    analData2 = new Data();
     analTotal = new Data();
-    rfiles = new old.analysisdata.FileRW();
+    rfiles = new FileRW();
     wfiles = new FileRW();
   }
 
   @AfterClass
-  public static void tearDownAfterClass() throws Exception {
+  public static void tearDownAfterClass() {
     analData1 = null;
     analData2 = null;
     analTotal = null;
@@ -47,7 +44,7 @@ public class TestCaseForAnalysisData {
   @Test
   public void test2() {
     String real = "Please When To High School STUDY HARD!!!";
-    String ans = analData1.analysisData(200);
+    String ans = analData2.analysisData(200);
 
     String strReal = String.valueOf(real);
     String strAns = String.valueOf(ans);
@@ -67,17 +64,29 @@ public class TestCaseForAnalysisData {
 
   @Test
   public void test4() {
-    String filename = "Xcore";
+    String filename1 = "Xcore";
+    String excep1 = null;
+    String filename2 = "Xcore1";
+    String errorans = "Xcore1 (The system cannot find the file specified)";
     double real = 100;
     double ans = 0;
     try {
-      ans = rfiles.readfile(filename);
+      ans = rfiles.readfile(filename1);
     } catch (Exception e) {
     }
+    try {
+      ans = rfiles.readfile(filename2);
+    } catch (Exception e) {
+      excep1 = e.getMessage();
+    }
+
+    String strError = String.valueOf(excep1);
+    String strAnsError = String.valueOf(errorans);
 
     String strReal = String.valueOf(real);
     String strAns = String.valueOf(ans);
     assertEquals(strReal, strAns);
+    assertEquals(strError, strAnsError);
   }
 
   @Test

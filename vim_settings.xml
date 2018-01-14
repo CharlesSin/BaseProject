@@ -3,6 +3,9 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="/Dummy.txt" timestamp="1515937717145">
+        <mark key="[" line="0" column="0" />
+      </file>
       <file name="$USER_HOME$/git/BaseProject/src/main/java/old/Data.java" timestamp="1515936300700">
         <mark key="[" line="3" column="1" />
       </file>
@@ -12,14 +15,20 @@
         <mark key="]" line="6" column="0" />
         <mark key="." line="6" column="0" />
       </file>
+      <file name="$USER_HOME$/git/BaseProject/src/test/java/old/analysisdata/TestCaseForAnalysisData.java" timestamp="1515937558110">
+        <mark key="[" line="89" column="9" />
+        <mark key="]" line="89" column="6" />
+        <mark key="." line="89" column="6" />
+        <mark key="^" line="89" column="6" />
+      </file>
     </filemarks>
     <jumps />
     <registers>
       <register name="&quot;" type="4">
-        <text>}</text>
+        <text>(</text>
       </register>
       <register name="-" type="4">
-        <text>}</text>
+        <text>(</text>
       </register>
     </registers>
     <search>
@@ -36,7 +45,7 @@
       <shortcut-conflict owner="vim">
         <text>ctrl pressed S</text>
       </shortcut-conflict>
-      <shortcut-conflict owner="vim">
+      <shortcut-conflict owner="ide">
         <text>ctrl pressed V</text>
       </shortcut-conflict>
     </shortcut-conflicts>

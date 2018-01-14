@@ -3,11 +3,20 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1515937717145">
+      <file name="/Dummy.txt" timestamp="1515938476716">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/git/BaseProject/src/main/java/old/Data.java" timestamp="1515936300700">
         <mark key="[" line="3" column="1" />
+      </file>
+      <file name="/a.dummy" timestamp="1515938721857">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/git/BaseProject/src/test/java/old/TestCaseForAnalysisData.java" timestamp="1515939005390">
+        <mark key="[" line="20" column="35" />
+        <mark key="]" line="23" column="17" />
+        <mark key="." line="23" column="17" />
+        <mark key="^" line="23" column="17" />
       </file>
       <file name="$USER_HOME$/git/BaseProject/src/main/java/old/analysisdata/Data.java" timestamp="1515936275207" />
       <file name="$USER_HOME$/git/BaseProject/src/main/java/old/FileRW.java" timestamp="1515936408122">
@@ -15,20 +24,31 @@
         <mark key="]" line="6" column="0" />
         <mark key="." line="6" column="0" />
       </file>
+      <file name="$USER_HOME$/git/BaseProject/src/main/java/old/MainForDataAndFileRW.java" timestamp="1515938932698">
+        <mark key="[" line="0" column="12" />
+        <mark key="]" line="0" column="12" />
+        <mark key="." line="0" column="12" />
+      </file>
       <file name="$USER_HOME$/git/BaseProject/src/test/java/old/analysisdata/TestCaseForAnalysisData.java" timestamp="1515937558110">
         <mark key="[" line="89" column="9" />
         <mark key="]" line="89" column="6" />
         <mark key="." line="89" column="6" />
         <mark key="^" line="89" column="6" />
       </file>
+      <file name="/fragment.java" timestamp="1515938768278">
+        <mark key="[" line="0" column="0" />
+      </file>
     </filemarks>
     <jumps />
     <registers>
+      <register name="1" type="4">
+        <text encoding="base64">CgppbXBvcnQgRGF0YTsKaW1wb3J0IEZpbGVSVzs=</text>
+      </register>
       <register name="&quot;" type="4">
-        <text>(</text>
+        <text>a.D</text>
       </register>
       <register name="-" type="4">
-        <text>(</text>
+        <text>a.D</text>
       </register>
     </registers>
     <search>

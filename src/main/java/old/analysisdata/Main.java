@@ -7,7 +7,7 @@ public class Main {
     FileRW filesIO = new FileRW();
     Data aData = new Data();
 
-    double total = filesIO.readfile("Xcore.txt");
+    double total = filesIO.readfile("Xcore");
 
     aData.setTotalScore(total);
 

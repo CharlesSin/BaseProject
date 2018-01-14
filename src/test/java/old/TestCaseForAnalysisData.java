@@ -1,25 +1,27 @@
-package old.analysisdata;
+package old;
 
 import static org.junit.Assert.*;
 
+import old.analysisdata.Data;
+import old.analysisdata.FileRW;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestCaseForAnalysisData {
 
-  public static Data analData1;
-  public static Data analData2;
-  public static Data analTotal;
-  public static FileRW rfiles;
-  public static FileRW wfiles;
+  private static Data analData1;
+  private static Data analData2;
+  private static Data analTotal;
+  private static FileRW rfiles;
+  private static FileRW wfiles;
 
   @BeforeClass
   public static void setUpBeforeClass() throws Exception {
-    analData1 = new Data();
-    analData2 = new Data();
+    analData1 = new old.analysisdata.Data();
+    analData2 = new old.analysisdata.Data();
     analTotal = new Data();
-    rfiles = new FileRW();
+    rfiles = new old.analysisdata.FileRW();
     wfiles = new FileRW();
   }
 

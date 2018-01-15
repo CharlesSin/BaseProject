@@ -67,10 +67,7 @@ public class TestCaseForAnalysisData {
     String file = "Xcore.txt";
     double real = 100;
     double ans = 0;
-    try {
-      ans = rfiles.readfile(file);
-    } catch (Exception e) {
-    }
+    ans = rfiles.readfile(file);
     String strReal = String.valueOf(real);
     String strAns = String.valueOf(ans);
     assertEquals(strReal, strAns);

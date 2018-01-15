@@ -6,14 +6,13 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * Start Here.
+ * Start Here test case.
  * 
  * @author Charles Sin starting.
  *
  */
 
 public class TestCaseForAnalysisData {
-
   private static Data analData1;
   private static Data analData2;
   private static Data analTotal;

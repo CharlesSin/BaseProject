@@ -2,6 +2,12 @@ package old;
 
 import java.io.*;
 
+/**
+ * Start Here.
+ * 
+ * @author Charles Sin starting.
+ *
+ */
 public class Recode {
   int code;
 

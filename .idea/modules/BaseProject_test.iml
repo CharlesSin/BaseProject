@@ -12,6 +12,21 @@
     <orderEntry type="module" module-name="BaseProject_main" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../commons-io-2.6" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../../commons-io-2.6/docs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../commons-io-2.6" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../commons-io-2.6" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../commons-io-2.6" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
   <component name="TestModuleProperties" production-module="BaseProject_main" />
 </module>

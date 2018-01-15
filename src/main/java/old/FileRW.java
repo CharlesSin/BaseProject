@@ -1,15 +1,26 @@
 package old;
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.Scanner;
 
+/**
+ * Start Here.
+ * 
+ * @author Charles Sin starting.
+ *
+ */
 public class FileRW {
 
-  public double readfile(String filename) throws Exception {
+  public double readfile(String filename) {
 
     java.io.File file = new java.io.File(filename);
 
-    Scanner input = new Scanner(file);
+    Scanner input = null;
+    try {
+      input = new Scanner(file);
+    } catch (FileNotFoundException e) {
+    }
 
     double ans = 0;
 

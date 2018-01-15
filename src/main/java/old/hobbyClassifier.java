@@ -1,11 +1,5 @@
 package old;
 
-/**
- * Start Here.
- * 
- * @author Charles Sin starting.
- *
- */
 public class hobbyClassifier {
   /**
    * Normalize input hobby.

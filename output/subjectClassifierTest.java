@@ -3,12 +3,6 @@ package old;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Start Here.
- * 
- * @author Charles Sin starting.
- *
- */
 public class subjectClassifierTest {
   @Test
   public void testClassifierS() {

@@ -4,6 +4,12 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.Scanner;
 
+/**
+ * Start Here.
+ * 
+ * @author Charles Sin starting.
+ *
+ */
 public class FileRW {
 
   public double readfile(String filename) {

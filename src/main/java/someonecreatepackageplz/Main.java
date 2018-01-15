@@ -12,10 +12,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
+/**
+ * Start Here,GUI.
+ * 
+ * @author Charles Sin starting.
+ *
+ */
 public class Main extends JFrame {
-
   /**
-   * 
+   * Main program.
    */
   private static final long serialVersionUID = 1L;
   private static Main instance;

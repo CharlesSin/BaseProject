@@ -4,6 +4,12 @@ import org.junit.Test;
 import java.io.IOException;
 import static org.junit.Assert.*;
 
+/**
+ * Start Here.
+ * 
+ * @author Charles Sin starting.
+ *
+ */
 public class ProfileCreatorTest {
   @Test
   public void testFile() throws IOException {

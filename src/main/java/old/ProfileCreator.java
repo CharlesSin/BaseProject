@@ -4,6 +4,12 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Start Here.
+ * 
+ * @author Charles Sin starting.
+ *
+ */
 public class ProfileCreator {
   public static String create(int score, int conduct, hobbyType hobby, iSubject subject) {
     try {

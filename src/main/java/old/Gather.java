@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  */
 public class Gather {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
     System.out.println("By entering 1,you are agreeing to the system to collect your personal information,exit now if you refuse so.");
     Scanner scan = new Scanner(System.in);
     if(scan.nextInt()==1) {
@@ -40,16 +40,6 @@ public class Gather {
     iSubject InterestS = subjectClassifier.sort(subject);
     hobbyType hobbyT = hobbyClassifier.sort(hobby);
     scan.close();
-    try {
-      BufferedWriter out = new BufferedWriter(new FileWriter("Profile.txt"));
-      out.write("Average Score:"+String.valueOf(score));
-      out.newLine();
-      out.write("Average Conduct:"+String.valueOf(conduct));
-      out.newLine();
-      out.write("Hobby:"+hobbyT.name());
-      out.newLine();
-      out.write("Interested field of studies:"+InterestS.name());
-      out.close();
-    } catch (IOException e) {}
+    ProfileCreator.create(score,conduct,hobbyT,InterestS);
   }
 }

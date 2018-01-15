@@ -11,7 +11,7 @@ public class TestCaseForRecodeandDecode {
   private static Recode recode1;
   private static Recode getWordRec0;
   private static Recode getWordRec1;
-  private static Recode testRecode;
+  private static Recode testRec;
 
   private static Decode decode0;
   private static Decode decode1;
@@ -27,7 +27,7 @@ public class TestCaseForRecodeandDecode {
     recode1 = new Recode(1);
     getWordRec0 = new Recode(0);
     getWordRec1 = new Recode(1);
-    testRecode = new Recode(0);
+    testRec = new Recode(0);
 
     decode0 = new Decode(0);
     decode1 = new Decode(1);
@@ -44,7 +44,7 @@ public class TestCaseForRecodeandDecode {
     recode1 = null;
     getWordRec0 = null;
     getWordRec1 = null;
-    testRecode = null;
+    testRec = null;
 
     decode0 = null;
     decode1 = null;
@@ -98,7 +98,7 @@ public class TestCaseForRecodeandDecode {
     String h = "Answer.txt";
     String w = "Encode.txt";
     String real = "Encode Done";
-    String ans = testRecode.recode(h, w);
+    String ans = testRec.recode(h, w);
 
     String strreal = String.valueOf(real);
     String strans = String.valueOf(ans);

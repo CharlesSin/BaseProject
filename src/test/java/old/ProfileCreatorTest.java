@@ -1,13 +1,7 @@
 package old;
 
-//import org.apache.commons.io.FileUtils;
-//import org.junit.Assert;
 import org.junit.Test;
-
-//import java.io.File;
 import java.io.IOException;
-//import java.nio.file.Files;
-
 import static org.junit.Assert.*;
 
 public class ProfileCreatorTest {
@@ -20,13 +14,9 @@ public class ProfileCreatorTest {
 
     String real = "All Pass";
     String ans = ProfileCreator.create(score, conduct, hobby, subject);
-    // File expected = new File("TestProfile.txt");
-    // File output = new File("Profile.txt");
 
     String strReal = String.valueOf(real);
     String strAns = String.valueOf(ans);
     assertEquals(strReal, strAns);
-
-    // Assert.assertEquals(FileUtils.readLines(expected), Files.lines(output));
   }
 }

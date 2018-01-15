@@ -71,8 +71,9 @@ public class TestCaseForAnalysisData {
       ans = rfiles.readfile(file);
     } catch (Exception e) {
     }
-
-    System.out.println(ans);
+    String strReal = String.valueOf(real);
+    String strAns = String.valueOf(ans);
+    assertEquals(strReal, strAns);
   }
 
   @Test

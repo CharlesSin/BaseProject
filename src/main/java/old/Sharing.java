@@ -16,7 +16,7 @@ public class Sharing {
 
   public String decode;
 
-  public String sharing(String code) {
+  public void sharing(String code) {
 
     decode = code;
     String errorMessage = null;
@@ -50,7 +50,7 @@ public class Sharing {
       }
       System.out.println("============================================================");
     }
-    return errorMessage;
+
   }
 
 }

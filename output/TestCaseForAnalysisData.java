@@ -5,13 +5,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-/**
- * Start Here test case.
- * 
- * @author Charles Sin starting.
- *
- */
-
 public class TestCaseForAnalysisData {
   private static Data analData1;
   private static Data analData2;
@@ -74,6 +67,7 @@ public class TestCaseForAnalysisData {
     double real = 100;
     double ans = 0;
     ans = rfiles.readfile(file);
+    
     String strReal = String.valueOf(real);
     String strAns = String.valueOf(ans);
     assertEquals(strReal, strAns);

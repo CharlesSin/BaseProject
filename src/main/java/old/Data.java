@@ -16,7 +16,7 @@ public class Data {
     if (totalScore < 200) {
       analysisans = "Please Go To Work, Because your study result is to bad.";
       System.out.println(analysisans);
-    } else if (totalScore > 199) {
+    } else {
       analysisans = "Please When To High School STUDY HARD!!!";
       System.out.println(analysisans);
     }

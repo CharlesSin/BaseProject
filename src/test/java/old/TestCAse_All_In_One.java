@@ -92,7 +92,7 @@ public class TestCAse_All_In_One {
   @Test
   public void test2() {
     String real = "Please When To High School STUDY HARD!!!";
-    String ans = analData2.analysisData(200);
+    String ans = analData2.analysisData(201);
 
     String strReal = String.valueOf(real);
     String strAns = String.valueOf(ans);

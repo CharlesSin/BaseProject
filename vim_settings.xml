@@ -6,6 +6,11 @@
       <file name="/Dummy.txt" timestamp="1516102398274">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/git/BaseProject/src/test/java/old/TestCAse_All_In_One.java" timestamp="1516352093329">
+        <mark key="[" line="12" column="32" />
+        <mark key="]" line="12" column="31" />
+        <mark key="." line="12" column="31" />
+      </file>
       <file name="$USER_HOME$/git/BaseProject/src/main/java/old/Data.java" timestamp="1515936300700">
         <mark key="[" line="3" column="1" />
       </file>
@@ -44,10 +49,10 @@
         <text encoding="base64">CgppbXBvcnQgRGF0YTsKaW1wb3J0IEZpbGVSVzs=</text>
       </register>
       <register name="&quot;" type="4">
-        <text>a.D</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text>a.D</text>
+        <text />
       </register>
     </registers>
     <search>
